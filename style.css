@@ -169,7 +169,7 @@ body {
 
 
 .banner-section {
-    width: 70%; 
+    width: 72%; 
     max-width: 1200px;
     margin-left: auto; 
     margin-right: auto; 
@@ -185,8 +185,8 @@ body {
 .banner-section h2 {
     color: rgb(255, 255, 255);
     position: absolute;
-    left: 22%;
-    top: 15%;
+    left: 2em;
+    top: 1em;
     font-size: 56px;
     font-weight: 800px;
     margin-bottom: 10px;
@@ -195,8 +195,8 @@ body {
 .banner-section p {
     color: rgb(255, 255, 255);
     position: absolute;
-    left: 22%;
-    top: 48%;
+    left: 4em;
+    top: 9em;
     font-size: 24px;
     font-weight: 600px;
 }
@@ -205,8 +205,8 @@ body {
 
 .banner-section button {
     position: absolute;
-    left: 25%;
-    top: 60%;
+    left: 10em;
+    top: 18em;
     background-color: #d9cee6;
     padding: 18px 23px;
     border-radius: 30px;
@@ -233,6 +233,7 @@ body {
     background-color: #F2F2F2;
     padding: 15px;
     width: 70%; 
+    height: 200px;
     max-width: 1200px;
     margin-left: auto; 
     margin-right: auto; 
@@ -285,6 +286,7 @@ color: #333333;
 border-radius: 30px;
 font-size: 16px;
 font-weight: 700;
+margin-top: 4em;
 
     white-space: nowrap;
 cursor: pointer;
@@ -311,6 +313,8 @@ border: solid #616161 .5px;
 .meal-section-card {
     position: relative;
    
+   
+   
 }
 .meal-section-card h2 {
     font-weight: 500;
@@ -324,8 +328,14 @@ border: solid #616161 .5px;
 }
 .meal-section-card-pic-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     
+    
+}
+.meal-section-card-pic {
+    flex-grow: 1;
+    flex-basis: 20%;
 }
 .meal-section-card-pic img {
     transition: filter 0.2s ease;
@@ -351,9 +361,7 @@ border: solid #616161 .5px;
     max-width: 1200px;
     margin-left: auto; 
     margin-right: auto;
-    margin-top: 65px;    
-   
-  
+    margin-top: 65px;  
     margin-bottom: 10em;
 }
 .locations-section h2 {
@@ -364,12 +372,16 @@ border: solid #616161 .5px;
 .locations-section-container {
     display: flex;
     justify-content: space-between;
-          
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: 20%;    
 }
 .locations-section-card {
     display: flex;
     flex-direction: column;
     text-align: center;
+    
+
 }
 .locations-section-card-by {
     display: flex;
@@ -580,6 +592,7 @@ text-decoration: underline;
     padding-right: 8px;
     color: #545454;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .footer-section-two-policy span a:hover {
@@ -638,3 +651,26 @@ text-decoration: underline;
 }
 
 
+@media screen and (max-width:600px) {
+body {
+    font-size: 10px;
+}
+    
+}
+
+@media screen and (max-width:600px) {
+
+.meal-section-card-pic {
+        flex-basis: 40%;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .locations-section-card {
+        flex-basis: 40%;
+        margin-top: 60px;
+
+    }
+    .footer-section-one-advisor {
+        display: none;
+    }
+}
