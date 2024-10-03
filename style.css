@@ -100,6 +100,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-bottom: 70px;
+    margin-top: 40px;
 }
 
 .search-section h1 {
@@ -110,7 +111,7 @@ body {
 .search-section__menu {
     display: flex;
     align-items: center;
-    margin: -10;
+    margin-top: 30px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -132,7 +133,7 @@ body {
     align-items: center;
     margin-top: 15px;
     height: 60px;
-    width: 40%;
+    width: 50%;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -163,9 +164,14 @@ body {
     margin: 5px;
 }
 
+
+
+
+
 .banner-section {
     position: relative;
     text-align: center;
+   
 }
 
 .banner-section img {
@@ -175,34 +181,30 @@ body {
 .banner-section h2 {
     color: rgb(255, 255, 255);
     position: absolute;
-    left: 25%;
-}
-
-.banner-section p {
-    color: rgb(255, 255, 255);
-    position: absolute;
-    left: 25%;
-}
-
-.banner-section h2 {
-    top: 20%;
+    left: 22%;
+    top: 15%;
     font-size: 56px;
     font-weight: 800px;
     margin-bottom: 10px;
 }
 
 .banner-section p {
-    top: 35%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 22%;
+    top: 48%;
     font-size: 24px;
     font-weight: 600px;
 }
 
+
+
 .banner-section button {
     position: absolute;
     left: 25%;
-    top: 50%;
-    background-color: #bca9cf;
-    padding: 20px 23px;
+    top: 60%;
+    background-color: #d9cee6;
+    padding: 18px 23px;
     border-radius: 30px;
     color: #1b1919;
     font-size: 16px;
@@ -214,6 +216,188 @@ body {
 .banner-section button:hover {
     background-color: #776488;
 }
+
+
+
+
+
+
+
+
+
+.mini-banner-section {
+    background-color: #F2F2F2;
+    padding: 15px;
+    width: 59%;
+    position: relative;
+    text-align: center;
+    left: 20%;
+    margin-top: 35px;
+    display: flex;
+    cursor: pointer;
+    
+}
+.mini-banner-section-pic {
+    display: inline-block;
+}
+.mini-banner-section img {
+    border-radius: 5px;
+    margin-right: 23px;
+}
+.mini-banner-section-content {
+    margin-left: 0;
+}
+
+.mini-banner-section-corona {
+    background-color:#E0E0E0 ;
+    width: 12em;
+    border-radius: 3px;
+    padding: 5px;
+    color: #545454;
+    font-size: 12px;
+    font-weight: 400;  
+    margin-bottom: 15px;
+    
+  
+}
+.mini-banner-section-h2 h2 {
+    font-weight: 500;
+ 
+  
+}
+.mini-banner-section-desc {
+    font-weight: 300;
+    display: flex;
+color: #616161;
+margin-top: 25px;
+margin-right :20px; ;
+
+}
+.mini-banner-section-desc button {
+    padding: 10px 25px;
+color: #333333;
+border-radius: 30px;
+font-size: 16px;
+font-weight: 700;
+
+    white-space: nowrap;
+cursor: pointer;
+border: solid #616161 .5px;
+}
+.mini-banner-section-desc button:hover {
+    color: white;
+    background-color: black;
+}
+
+
+
+
+
+
+.meal-section {
+    margin-left:20%;
+    margin-top: 35px;
+    width: 61%;
+    
+
+}
+.meal-section-card {
+    position: relative;
+   
+}
+.meal-section-card h2 {
+    font-weight: 500;
+    margin-bottom: 15px;
+   
+}
+.meal-section-card h3 {
+    margin-bottom: 15px;
+    color: #616161;
+    font-weight: 100;
+}
+.meal-section-card-pic-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.meal-section-card-pic img {
+    transition: filter 0.2s ease;
+    border-radius: 10px;
+    padding-right: 5px;
+    
+}
+
+.meal-section-card-pic img:hover {
+    cursor: pointer;
+    filter: invert(0.1) brightness(1.1) saturate(1.1);
+   
+    
+}
+
+
+
+
+
+
+.locations-section {
+    margin-left:20%;
+    margin-top: 65px;    
+    width: 70%;
+    max-width: 1200px;
+}
+.locations-section h2 {
+ font-weight: 500;
+ margin-bottom: 10px;
+
+}
+.locations-section-container {
+    display: flex;
+    justify-content: space-between;
+          
+}
+.locations-section-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.locations-section-card-by {
+    display: flex;
+    justify-content: center; 
+    color: black; 
+  
+    margin-top: 15px;
+    gap: 5px;
+}
+.locations-section-card-pic img {
+    height: 231px;
+    width: 365px;
+    border-radius: 10px;
+}
+
+.locations-section-card-by p, a {
+    color: black;
+    text-decoration: none;
+}
+.locations-section-card-by a:hover {
+text-decoration: underline;
+}
+.locations-section-card-rating {
+    margin-top: 15px;
+    font-size: 18px;
+}
+.locations-section-card-rating a:hover {
+    text-decoration: underline;
+    }
+
+.locations-section-card-rating img {
+    height: 30px;
+    
+}
+
+
+
+
+
 
 .chennai-section-card__dots {
     font-size: 80px;
