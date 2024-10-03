@@ -169,13 +169,17 @@ body {
 
 
 .banner-section {
+    width: 70%; 
+    max-width: 1200px;
+    margin-left: auto; 
+    margin-right: auto; 
     position: relative;
     text-align: center;
    
 }
 
 .banner-section img {
-    width: 60%;
+    width: 100%;
 }
 
 .banner-section h2 {
@@ -228,10 +232,12 @@ body {
 .mini-banner-section {
     background-color: #F2F2F2;
     padding: 15px;
-    width: 59%;
+    width: 70%; 
+    max-width: 1200px;
+    margin-left: auto; 
+    margin-right: auto; 
     position: relative;
     text-align: center;
-    left: 20%;
     margin-top: 35px;
     display: flex;
     cursor: pointer;
@@ -295,10 +301,11 @@ border: solid #616161 .5px;
 
 
 .meal-section {
-    margin-left:20%;
+    width: 70%; 
+    max-width: 1200px;
+    margin-left: auto; 
+    margin-right: auto;
     margin-top: 35px;
-    width: 61%;
-    
 
 }
 .meal-section-card {
@@ -329,7 +336,7 @@ border: solid #616161 .5px;
 
 .meal-section-card-pic img:hover {
     cursor: pointer;
-    filter: invert(0.1) brightness(1.1) saturate(1.1);
+    filter: invert(0.1) brightness(1.2) saturate(1.1);
    
     
 }
@@ -340,10 +347,14 @@ border: solid #616161 .5px;
 
 
 .locations-section {
-    margin-left:20%;
-    margin-top: 65px;    
-    width: 70%;
+    width: 70%; 
     max-width: 1200px;
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 65px;    
+   
+  
+    margin-bottom: 10em;
 }
 .locations-section h2 {
  font-weight: 500;
@@ -372,6 +383,11 @@ border: solid #616161 .5px;
     height: 231px;
     width: 365px;
     border-radius: 10px;
+    transition: filter 0.2s ease;
+}
+.locations-section-card-pic img:hover {
+    cursor: pointer;
+    filter: invert(0.1) brightness(1.2) saturate(1.1);
 }
 
 .locations-section-card-by p, a {
@@ -399,20 +415,14 @@ text-decoration: underline;
 
 
 
-.chennai-section-card__dots {
-    font-size: 80px;
-    display: inline-block;
-    color: #10AA6C;
-    letter-spacing: -10px;
-}
-
-.chennai-section-card-num {
-    display: inline-block;
-}
 
 .travellers-section {
     position: relative;
+    
 }
+.travellers-section img {
+    width: 100%; 
+}  
 
 .travellers-section button {
     position: absolute;
@@ -626,3 +636,5 @@ text-decoration: underline;
     margin: .8em;
     margin-bottom: 3em;
 }
+
+
