@@ -18,6 +18,10 @@ body {
     padding: 20px;
 }
 
+.nav-section-small {
+    display: none;
+}
+
 .nav-section img {
     width: 188px;
     height: 100%;
@@ -48,6 +52,9 @@ body {
     text-decoration: none;
     color: #545454;
 }
+
+
+
 
 .nav-section__menu a:hover {
     text-decoration: underline;
@@ -95,12 +102,31 @@ body {
     background-color: #333333;
 }
 
+.nav-section-600 {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 .search-section {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 70px;
     margin-top: 40px;
+
+
+
+
+
 }
 
 .search-section h1 {
@@ -114,12 +140,17 @@ body {
     margin-top: 30px;
     font-size: 18px;
     font-weight: 500;
+    overflow-x: auto;
+    max-width: 100%;
+    white-space: nowrap;
+
 }
 
 .search-section__menu img {
     height: 35px;
     width: 35px;
     margin-left: 20px;
+
 }
 
 .search-section__menu a {
@@ -137,6 +168,54 @@ body {
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.search-section-small {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow:10px 10px 5px 0;
+    width: 90%;    
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+   
+}
+.search-section-small1 {
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px rgb(223, 216, 216);
+    padding: 10px;
+    gap: 10px;
+    
+
+}
+.search-section-small1 img {
+    height: 25px;
+}
+.search-section-small input {
+    border: none;
+    font-size: 16px;       
+    width: 100%;
+    font-weight: 500;
+}
+.search-section-small input:focus {
+outline: none;
+
+}
+button {
+margin-top: 10px;
+background-color: #34E0A1;
+border: none;
+padding: 15px;
+border-radius: 25px;
+font-size: 16px;
+font-weight: 600;
+color: rgb(41, 39, 39);
+
+
+} 
+
 
 .search-section__search img {
     height: 27px;
@@ -169,13 +248,13 @@ body {
 
 
 .banner-section {
-    width: 72%; 
+    width: 72%;
     max-width: 1200px;
-    margin-left: auto; 
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     text-align: center;
-   
+
 }
 
 .banner-section img {
@@ -188,7 +267,7 @@ body {
     left: 2em;
     top: 1em;
     font-size: 56px;
-    font-weight: 800px;
+    font-weight: 800;
     margin-bottom: 10px;
 }
 
@@ -232,66 +311,74 @@ body {
 .mini-banner-section {
     background-color: #F2F2F2;
     padding: 15px;
-    width: 70%; 
+    width: 70%;
     height: 200px;
     max-width: 1200px;
-    margin-left: auto; 
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     text-align: center;
     margin-top: 35px;
     display: flex;
     cursor: pointer;
-    
+
 }
+
 .mini-banner-section-pic {
     display: inline-block;
 }
+
 .mini-banner-section img {
     border-radius: 5px;
     margin-right: 23px;
 }
+
 .mini-banner-section-content {
     margin-left: 0;
 }
 
 .mini-banner-section-corona {
-    background-color:#E0E0E0 ;
+    background-color: #E0E0E0;
     width: 12em;
     border-radius: 3px;
     padding: 5px;
     color: #545454;
     font-size: 12px;
-    font-weight: 400;  
+    font-weight: 400;
     margin-bottom: 15px;
-    
-  
+
+
 }
+
 .mini-banner-section-h2 h2 {
     font-weight: 500;
- 
-  
+
+
 }
+
 .mini-banner-section-desc {
     font-weight: 300;
     display: flex;
-color: #616161;
-margin-top: 25px;
-margin-right :20px; ;
+    color: #616161;
+    margin-top: 25px;
+    margin-right: 20px;
+    ;
 
 }
+
 .mini-banner-section-desc button {
     padding: 10px 25px;
-color: #333333;
-border-radius: 30px;
-font-size: 16px;
-font-weight: 700;
-margin-top: 4em;
+    color: #333333;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 4em;
 
     white-space: nowrap;
-cursor: pointer;
-border: solid #616161 .5px;
+    cursor: pointer;
+    border: solid #616161 .5px;
 }
+
 .mini-banner-section-desc button:hover {
     color: white;
     background-color: black;
@@ -303,52 +390,58 @@ border: solid #616161 .5px;
 
 
 .meal-section {
-    width: 70%; 
+    width: 70%;
     max-width: 1200px;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     margin-top: 35px;
 
 }
+
 .meal-section-card {
     position: relative;
-   
-   
-   
+
+
+
 }
+
 .meal-section-card h2 {
     font-weight: 500;
     margin-bottom: 15px;
-   
+
 }
+
 .meal-section-card h3 {
     margin-bottom: 15px;
     color: #616161;
     font-weight: 100;
 }
+
 .meal-section-card-pic-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-    
+
+
 }
+
 .meal-section-card-pic {
     flex-grow: 1;
     flex-basis: 20%;
 }
+
 .meal-section-card-pic img {
     transition: filter 0.2s ease;
     border-radius: 10px;
     padding-right: 5px;
-    
+
 }
 
 .meal-section-card-pic img:hover {
     cursor: pointer;
     filter: invert(0.1) brightness(1.2) saturate(1.1);
-   
-    
+
+
 }
 
 
@@ -357,69 +450,85 @@ border: solid #616161 .5px;
 
 
 .locations-section {
-    width: 70%; 
+    width: 70%;
     max-width: 1200px;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
-    margin-top: 65px;  
+    margin-top: 65px;
     margin-bottom: 10em;
 }
+
 .locations-section h2 {
- font-weight: 500;
- margin-bottom: 10px;
+    
+    margin-bottom: 15px;
+    font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+    font-weight: 700;
 
 }
+.locations-section p {
+    margin-bottom: 15px;
+    color: #5c5858;
+    font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+}
+
 .locations-section-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-grow: 1;
-    flex-basis: 20%;    
+    flex-basis: 20%;
 }
+
 .locations-section-card {
     display: flex;
     flex-direction: column;
     text-align: center;
-    
+
 
 }
+
 .locations-section-card-by {
     display: flex;
-    justify-content: center; 
-    color: black; 
-  
+    justify-content: center;
+    color: black;
+
     margin-top: 15px;
     gap: 5px;
 }
+
 .locations-section-card-pic img {
     height: 231px;
     width: 365px;
     border-radius: 10px;
     transition: filter 0.2s ease;
 }
+
 .locations-section-card-pic img:hover {
     cursor: pointer;
     filter: invert(0.1) brightness(1.2) saturate(1.1);
 }
 
-.locations-section-card-by p, a {
+.locations-section-card-by p,a {
     color: black;
     text-decoration: none;
 }
+
 .locations-section-card-by a:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
+
 .locations-section-card-rating {
     margin-top: 15px;
     font-size: 18px;
 }
+
 .locations-section-card-rating a:hover {
     text-decoration: underline;
-    }
+}
 
 .locations-section-card-rating img {
     height: 30px;
-    
+
 }
 
 
@@ -430,11 +539,12 @@ text-decoration: underline;
 
 .travellers-section {
     position: relative;
-    
+
 }
+
 .travellers-section img {
-    width: 100%; 
-}  
+    width: 100%;
+}
 
 .travellers-section button {
     position: absolute;
@@ -456,7 +566,7 @@ text-decoration: underline;
 
 .footer-section {
     background-color: #F2F2F2;
-    margin-top:4em ;
+    margin-top: 4em;
 }
 
 .footer-section-one {
@@ -567,7 +677,7 @@ text-decoration: underline;
     align-items: center;
     margin-left: 20%;
     margin-top: 1em;
-    
+
 }
 
 .footer-section-two-logo img {
@@ -583,7 +693,7 @@ text-decoration: underline;
 
 .footer-section-two-policy p {
     font-size: 12px;
-    color:#585044;
+    color: #585044;
     margin-bottom: 0.5em;
 
 }
@@ -600,9 +710,9 @@ text-decoration: underline;
 }
 
 .footer-section-two-inputs {
-    
+
     margin-left: 14%;
-    
+
 
 }
 
@@ -612,38 +722,42 @@ text-decoration: underline;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     font-size: 16px;
     font-weight: 700;
-    color:rgb(36, 35, 35);
-    border:none ;
+    color: rgb(36, 35, 35);
+    border: none;
     margin-right: 10px;
 }
+
 .footer-section-two-inputs-Countries {
     padding-top: 8px;
     padding-bottom: 7px;
-    padding-right:  35px;
+    padding-right: 35px;
     padding-left: 8px;
     border-radius: 10px;
-    border:none ;
+    border: none;
     font-size: 16px;
     font-weight: 700;
     color: rgb(36, 35, 35);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    
+
 }
 
 .footer-section-three {
     display: flex;
     margin-left: 20%;
     margin-top: 1em;
-    
+
 }
+
 .footer-section-three-desc {
     font-size: 12px;
-    color:#6b665e;
+    color: #6b665e;
 }
+
 .footer-section-three-media {
     margin-left: 13em;
-    
+
 }
+
 .footer-section-three-media img {
     height: 22px;
     margin: .8em;
@@ -651,26 +765,108 @@ text-decoration: underline;
 }
 
 
-@media screen and (max-width:600px) {
-body {
-    font-size: 10px;
-}
-    
-}
 
-@media screen and (max-width:600px) {
+/* responsive for Meal, location and Nav sections */
 
-.meal-section-card-pic {
+@media screen and (max-width:800px) {
+
+    body {
+        font-size: 10px;
+    }
+
+    .meal-section-card-pic {
         flex-basis: 40%;
         margin-top: 15px;
         text-align: center;
     }
-    .locations-section-card {
-        flex-basis: 40%;
-        margin-top: 60px;
 
-    }
+   
     .footer-section-one-advisor {
         display: none;
+    }
+
+    .nav-section {
+        display: none;
+    }
+
+    .nav-section-small {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .nav-section-small__menu {
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .nav-section-small__logo {
+        width: 132px;
+        cursor: pointer;
+    }
+
+    .nav-section-small__user {
+        height: 25px;
+        cursor: pointer;
+    }
+
+}
+
+/* Responsive for search section */
+
+@media screen and (max-width:600px) {
+
+    .search-section__menu {
+
+        overflow-x: auto;
+
+    }
+    .search-section__search {
+        display: none;
+    }
+    .search-section-small {
+        display: flex;
+    }
+    .search-section h1 {
+        display: none;
+}
+.mini-banner-section {
+    display: none;
+}
+.meal-section-card h2 {
+    font-size: 24px;
+}
+.meal-section-card h3 {
+    font-size: 16px;
+    font-family: Trip Sans VF, "Trip Sans", Arial, sans-serif;
+    font-weight: 400;
+
+}
+}
+
+/* Responsive for locations section */
+
+@media screen and (max-width:600px) {
+
+    .locations-section-card {
+        flex-basis: 40%;
+        margin-bottom: 60px;
+
+    }
+
+    .locations-section h2 {
+             font-size: 24px;
+        font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+        font-weight: 600;    
+    }
+    .locations-section p {
+        
+        font-size: 16px;
+        color: #5c5858;
+        font-family: "Trip Sans VF", "Trip Sans", Arial, sans-serif;
+    }
+    .locations-section-card-by a {
+        font-size: 16px;
     }
 }
