@@ -190,22 +190,22 @@ body {
     width: 90%;
     padding: 15px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 
 }
 
-.search-section-small1 {
+.search-section-small-1 {
     display: flex;
     align-items: center;
     border-bottom: solid 1px rgb(223, 216, 216);
     padding: 10px;
     gap: 10px;
-
-
 }
 
-.search-section-small1 img {
+.search-section-small-1 img {
     height: 25px;
 }
 
@@ -560,7 +560,7 @@ button:hover {
 
 .locations-section {
     width: 70%;
-    max-width: 1200px;
+   
     margin-left: auto;
     margin-right: auto;
     margin-top: 65px;
@@ -587,14 +587,16 @@ button:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-grow: 1;
-    flex-basis: 20%;
-}
+    
+    
 
 .locations-section-card {
     display: flex;
     flex-direction: column;
     text-align: center;
+    flex-grow: 1;
+    flex-basis: 20%;
+}
 
 
 }
@@ -610,7 +612,7 @@ button:hover {
 
 .locations-section-card-pic img {
     height: 231px;
-    width: 365px;
+   
     border-radius: 10px;
     transition: filter 0.2s ease;
 }
@@ -652,13 +654,20 @@ a {
     margin: 0 auto;
     margin-bottom: 10em;
     max-width: 1200px;
+    
+}
+.top-destination-section h1 {
+margin-bottom: 10px;
+font-weight: 500;
+font-size: 24px;
 }
 
 .top-destination-section-container {
 
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;  
+    
    
     
 }
@@ -666,7 +675,9 @@ a {
 .destination-card {
     flex-basis: 20%;
     flex-grow: 1;
-    margin: 10px;
+    margin: 20px;
+    
+    
     position: relative;
     
 }
@@ -675,6 +686,7 @@ a {
     height: auto;
     border-radius: 10px;
     transition: filter 0.1s ease;
+    
 }
 .destination-card  img:hover {
     cursor: pointer;
@@ -1136,25 +1148,13 @@ a {
 
 
 
-/* responsive for Meal, location and Nav sections */
+/* responsive for Nav sections */
 
 @media screen and (max-width:800px) {
 
     body {
         font-size: 10px;
     }
-
-    .meal-section-card-pic {
-        flex-basis: 40%;
-        margin-top: 15px;
-        text-align: center;
-    }
-
-
-    .footer-section-one-advisor {
-        display: none;
-    }
-
     .nav-section {
         display: none;
     }
@@ -1199,6 +1199,8 @@ a {
 
     .search-section-small {
         display: flex;
+        margin-bottom: 15px;
+        
     }
 
     .search-section h1 {
@@ -1220,6 +1222,43 @@ a {
 
     }
 }
+
+
+
+/* Responsive for Meal section */
+
+@media screen and (max-width:800px) {
+
+.meal-section-card-pic {
+    flex-basis: 40%;
+    margin-top: 15px;
+    text-align: center;
+}
+}
+
+/* Responsive for Banner section */
+
+@media screen and (max-width:800px) { 
+    .banner-section {
+        display: none;
+    }
+    
+    .banner-section-small {
+        display: block;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive for locations section */
 
@@ -1248,13 +1287,36 @@ a {
         font-size: 16px;
     }
 
-    .banner-section {
+
+   
+
+    .travellers-section {
         display: none;
     }
 
-    .banner-section-small {
+    .travellers-section-small {
         display: block;
     }
+
+    .Trending-section {
+        display: flex;
+    }
+}
+  
+
+@media screen and (max-width:800px)  {
+    .destination-card {
+        flex-basis: 45%; /* 1 card in a row */
+    }
+}
+
+
+
+
+
+/* Responsive for Footer section */
+
+@media screen and (max-width:800px) {
 
     .footer-section-two {
         display: none;
@@ -1272,25 +1334,4 @@ a {
         display: none;
     }
 
-    .travellers-section {
-        display: none;
-    }
-
-    .travellers-section-small {
-        display: block;
-    }
-
-    .Trending-section {
-        display: flex;
-    }
-
-    .top-destination-section-container {
-        
-    }
-}
-
-@media screen and (max-width:800px)  {
-    .destination-card {
-        flex-basis: 45%; /* 1 card in a row */
-    }
 }
