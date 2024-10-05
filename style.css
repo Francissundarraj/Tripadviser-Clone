@@ -19,9 +19,9 @@ body {
     padding: 20px;
     position: sticky;
     top: 10;
-    z-index: 1000; 
-   
-    
+    z-index: 1000;
+
+
 }
 
 .nav-section-small {
@@ -32,9 +32,9 @@ body {
     width: 188px;
     height: 100%;
     cursor: pointer;
-     position: sticky;
+    position: sticky;
     top: 10;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .nav-section__menu {
@@ -131,7 +131,7 @@ body {
     flex-direction: column;
     margin-bottom: 70px;
     margin-top: 40px;
-    
+
 
 
 
@@ -167,6 +167,7 @@ body {
     text-decoration: none;
     padding: 0px;
 }
+
 .search-section__menu a:hover {
     text-decoration: underline;
 }
@@ -229,12 +230,13 @@ button {
     font-size: 16px;
     font-weight: 600;
     color: rgb(41, 39, 39);
-    }
-    button:hover {
-        cursor: pointer;
-        background-color: #badace;
+}
 
-    }
+button:hover {
+    cursor: pointer;
+    background-color: #badace;
+
+}
 
 
 .search-section__search img {
@@ -510,9 +512,6 @@ button {
 
 .meal-section-card {
     position: relative;
-
-
-
 }
 
 .meal-section-card h2 {
@@ -565,7 +564,9 @@ button {
     margin-left: auto;
     margin-right: auto;
     margin-top: 65px;
-    margin-bottom: 6em;
+    margin-bottom: 4em;
+   
+
 }
 
 .locations-section h2 {
@@ -647,56 +648,66 @@ a {
 /* Top-destination-section */
 
 .top-destination-section {
-    width: 80%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 72%;
+    margin: 0 auto;
     margin-bottom: 10em;
-    
+    max-width: 1200px;
 }
 
 .top-destination-section-container {
+
     display: flex;
-    gap: 19px;
-    margin-top: 20px;
-
+    justify-content: space-between;
+    flex-wrap: wrap;    
+   
     
-  }  
-  .destination-card {
+}
 
-    position: relative;
+.destination-card {
     flex-basis: 20%;
-    flex-wrap: nowrap;
     flex-grow: 1;
-
-  }
-  .destination-card img{ 
+    margin: 10px;
+    position: relative;
+    
+}
+.destination-card img {
+    
+    height: auto;
     border-radius: 10px;
     transition: filter 0.1s ease;
 }
-
 .destination-card  img:hover {
     cursor: pointer;
     filter: invert(0.1) brightness(1.2) saturate(1.1);
   }
+
   .destination-card h1 {
     position: absolute;
     bottom: 10%;
     left: 5%;
     color: white;
   }
+  .destination-card h1:hover {
+    cursor: pointer;
+    filter: invert(0.1) brightness(1.2) saturate(1.1);
+  }
+
+
+
+
 
 
 .travellers-section-small {
     display: none;
     background-color: #FFF7E1;
-   
+
 }
+
 .travellers-section-small-badge img {
     height: 75px;
     margin-left: 25px;
     margin-top: 25px;
-    
+
 }
 
 .travellers-section-small-bgimage img {
@@ -721,9 +732,10 @@ a {
 .travellers-section-small button {
     margin-left: 25px;
     margin-top: 15px;
-    background-color:black ;
+    background-color: black;
     color: white;
 }
+
 .travellers-section-small button:hover {
     cursor: pointer;
     background-color: #545454;
@@ -769,20 +781,22 @@ a {
 
 
 .Trending-section {
-margin-top: 55px;
-margin-left: 35px;
+    margin-top: 55px;
+    margin-left: 35px;
     display: none;
     flex-direction: column;
     gap: 10px;
     font-size: 15px;
 
 }
+
 .Trending-section__title {
     text-decoration: underline solid black 2px;
     margin-bottom: 15px;
     margin-top: 15px;
-    
+
 }
+
 .Trending-section a {
     color: #585044;
 }
@@ -1267,9 +1281,16 @@ margin-left: 35px;
     }
 
     .Trending-section {
-       display: flex;
+        display: flex;
     }
-    .top-destination-section-container  {
-        flex-basis: 40%;
+
+    .top-destination-section-container {
+        
+    }
+}
+
+@media screen and (max-width:800px)  {
+    .destination-card {
+        flex-basis: 45%; /* 1 card in a row */
     }
 }

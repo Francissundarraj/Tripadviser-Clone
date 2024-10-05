@@ -1,0 +1,68 @@
+<div class="top-destination-section">
+    <h1>Top destinations for your next vacation</h1>
+    <div class="top-destination-section-container">
+        <div class="destination-card">
+            <img src="./images/TD1.jpg" alt="London">
+            <h1>London, UK</h1>
+        </div>
+
+        <div class="destination-card">
+            <img src="./images/TD5.jpg" alt="Cancun, Mexico">
+            <h1>Cancun, Mexico</h1>
+        </div>
+
+        <div class="destination-card">
+            <img src="./images/TD4.jpg" alt="Vegas">
+            <h1>Las Vegas, NV</h1>
+        </div>
+
+        <div class="destination-card">
+            <img src="./images/TD3.jpg" alt="Orlando">
+            <h1>Orlando, FL</h1>
+        </div>
+
+    </div>
+
+</div>
+
+<style>
+    .top-destination-section {
+   text-align: center;
+    
+ 
+    margin-bottom: 10em;
+    
+}
+
+.top-destination-section-container {
+    display: flex;
+    gap: 19px;
+    margin-top: 20px;
+   
+
+    
+  }  
+  .destination-card {
+
+    position: relative;
+    flex-basis: 20%;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+
+  }
+  .destination-card img{ 
+    border-radius: 10px;
+    transition: filter 0.1s ease;
+}
+
+.destination-card  img:hover {
+    cursor: pointer;
+    filter: invert(0.1) brightness(1.2) saturate(1.1);
+  }
+  .destination-card h1 {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: white;
+  }
+</style>
