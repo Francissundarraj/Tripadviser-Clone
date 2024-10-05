@@ -666,25 +666,21 @@ font-size: 24px;
 
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;  
-    
-   
+    flex-wrap: wrap;   
     
 }
 
 .destination-card {
     flex-basis: 20%;
     flex-grow: 1;
-    margin: 20px;
-    
-    
-    position: relative;
-    
+    margin: 20px; 
+    position: relative;    
 }
 .destination-card img {
     
     height: auto;
     border-radius: 10px;
+    width: 100%;
     transition: filter 0.1s ease;
     
 }
